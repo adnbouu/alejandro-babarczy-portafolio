@@ -1,15 +1,15 @@
 <h1 align="center">Hi 👋, I'm Alejandro Babarczy</h1>
 <h3 align="center">A passionate frontend developer from Peru.</h3>
 
-- 🔭 I’m currently working on [my portfolio.](https://alejandro-babarczy-portafolio.vercel.app/)
+- 🔭 I’m currently working on [my portfolio](https://alejandro-babarczy-portafolio.vercel.app/).
 
 - 🌱 I’m currently learning **Astro, HTML, CSS and Tailwind.**
 
 - 👨‍💻 All of my projects are available at [https://alejandro-babarczy-portafolio.vercel.app/](https://alejandro-babarczy-portafolio.vercel.app/)
 
-- 📫 How to reach me **adnbou2009@gmail.com**
+- 📫 How to reach me: **adnbou2009@gmail.com**
 
-- ⚡ Fun fact **I like to play videogames.**
+- ⚡ Fun fact: **I like to play videogames.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
