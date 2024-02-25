@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --negro: #252525;
+  --morado: #5425b3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--negro);
+  transition: all 0.2s ease;
+  scroll-behavior: smooth;
+  scroll-padding: 4rem;
+}
+
+div {
+  display: block;
+}
+
+.bx:hover {
+  scale: 1.1;
+  color: var(--morado);
+}
+
+h3 {
+  display: block;
+  font-weight: bold;
+}
+
+section {
+  display: block;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+nav {
+  margin: auto;
+  width: 100%;
+  padding: 1.1rem 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  position: fixed;
+  z-index: 100;
+}
+
+nav .nav-links a:hover {
+  color: var(--morado);
+}
+
+.logo {
+  color: var(--morado);
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 11rem 11rem 6.5rem;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+img {
+  display: flex;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 7rem;
+  border: 3px solid var(--negro);
+}
+
+.content h1 {
+  background: linear-gradient(90deg, var(--negro), var(--morado));
+  font-size: 3.7rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-clip: text;
+  width: 33rem;
+  -webkit-text-fill-color: transparent;
+}
+
+span {
+  color: var(--morado);
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin: 2rem 0 2.7rem;
+  width: 20rem;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+.buttons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  line-height: 1;
+  gap: 2rem;
+  font-size: 2.25rem;
+}
+
+.skills-tab {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-tab h3 {
+  font-size: 1.3rem;
+  margin: 0 0 2rem;
+}
+
+.skills {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 37rem;
+}
+
+.skill-a {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/js.3dfb665e058d08c99f28.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+.skill-b {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/typescript.1e3902edbe4c3f2970d8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+.skill-c {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/react.8a6fc0a24a800d1e0f4a.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+.skill-d {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/nextjs.e3c042b9d9d809ebb67e.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+.skill-e {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/node.e328955d6bbbf3ebc72b.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+.skill-f {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.skill-g {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/css-3.463e319bad8e0edf1ef7.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.skill-h {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/redux.b3b939c66aecf7d53967.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.skill-a:hover,
+.skill-b:hover,
+.skill-c:hover,
+.skill-d:hover,
+.skill-e:hover,
+.skill-f:hover,
+.skill-g:hover,
+.skill-h:hover {
+  scale: 1.1;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6.5rem 11rem;
+}
+
+.about-title {
+  margin-bottom: 3rem;
+}
+
+.about-title h2 {
+  color: var(--morado);
+  border-bottom: 3px solid var(--morado);
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0 0 0.3rem;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  width: 60%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.about-text h3 {
+  font-size: 1.9rem;
+  margin: 0 4rem 1rem 0;
+}
+
+.about-text p {
+  font-weight: 500;
+  text-wrap: balance;
+  line-height: 1.5rem;
+}
+
+.about-text span {
+  font-weight: 600;
+}
+
+.about-image {
+  background: url(images/avatar.png);
+  background-position-y: 21%;
+  background-size: cover;
+  border-radius: 50%;
+  height: 10rem;
+  position: absolute;
+  right: -4rem;
+  top: -4rem;
+  width: 10rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.projects {
+  align-items: center;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6.5rem 21rem;
+}
+
+.projects-title {
+  margin-bottom: 3rem;
+}
+
+.projects-title h2 {
+  border-bottom: 3px solid var(--morado);
+  color: var(--morado);
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 0 0 0.3rem;
+}
+
+.projects-card-container {
+  grid-gap: 3rem;
+  box-sizing: border-box;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  text-wrap: balance;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right a {
+  cursor: pointer;
+}
+
+.project-top {
+  text-align: center;
+}
+
+.project-top p {
+  font-weight: 500;
+}
+
+.project-title {
+  font-size: 1.7rem;
+  margin: 0 0 1rem;
+}
+
+.project-description {
+  margin: 0;
+}
+
+.project-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-bottom h3 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.project-skills {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-links a {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem 0;
+  text-decoration: none;
+}
+
+.img-project-1,
+.img-project-2,
+.img-project-3,
+.img-project-4,
+.img-project-5 {
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  height: 15rem;
+  width: 25rem;
+  transition: all 0.3s ease;
+}
+
+.img-project-1:hover,
+.img-project-2:hover,
+.img-project-3:hover,
+.img-project-4:hover,
+.img-project-5:hover {
+  scale: 1.02;
+}
+
+.img-project-1 {
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Gymate.58170dc8795a2991df26.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-project-2 {
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/NicaVideo.05a837ca95ffa2855c03.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-project-3 {
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Transporte.99a5acbe716a98b1f230.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-project-4 {
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/NoteCloud.a03d4987500b9c7412c9.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-project-5 {
+  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Songy.dd3e1bf0890bf05cd153.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  align-items: center;
+  background-color: #ededed;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 6.5rem;
+}
+
+.contact-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 11rem 6.5rem;
+  width: 100%;
+}
+
+.contact-title {
+  border-bottom: 3px solid var(--morado);
+  color: var(--morado);
+  font-size: 1.7rem;
+  margin: 0 0 3rem;
+  padding: 0 0 0.3rem;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  text-align: center;
+  width: 30rem;
+  text-wrap: balance;
+}
+
+.contact-card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 6rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-link a {
+  margin: 0.5rem 1rem;
+}
+
+.contact-link .bx:hover {
+  scale: 1.05;
+}
+
+.contact-link p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.separation {
+  display: flex;
+  height: .1rem;
+  margin: 0.5rem 0 0.5rem;
+  width: 120%;
+  border-radius: 20px;
+  background-color: #0000001e;
+}
+
+.copyright {
+  background: linear-gradient(to right, var(--negro), var(--morado));
+  color: #eee;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about {
+    padding: 6.5rem 0rem;
+    text-align: center;
+  }
+}
