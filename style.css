@@ -15,7 +15,11 @@
   color: var(--negro);
   transition: all 0.2s ease;
   scroll-behavior: smooth;
-  scroll-padding: 4rem;
+  /* scroll-padding: 4rem; */
+}
+
+html {
+  overflow-x: hidden;
 }
 
 div {
@@ -147,6 +151,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .skills-tab h3 {
@@ -232,6 +237,15 @@ span {
   border-radius: 5px;
 }
 
+.skill-i {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url(images/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+
 .skill-a:hover,
 .skill-b:hover,
 .skill-c:hover,
@@ -239,7 +253,8 @@ span {
 .skill-e:hover,
 .skill-f:hover,
 .skill-g:hover,
-.skill-h:hover {
+.skill-h:hover,
+.skill-i:hover {
   scale: 1.1;
 }
 
@@ -289,6 +304,7 @@ span {
 .about-text h3 {
   font-size: 1.9rem;
   margin: 0 4rem 1rem 0;
+  text-align: center;
 }
 
 .about-text p {
@@ -360,7 +376,9 @@ span {
   display: flex;
   height: fit-content;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem;
+  gap: 2rem;
 }
 
 .left {
@@ -375,6 +393,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .right a {
@@ -404,13 +423,14 @@ span {
 }
 
 .project-bottom h3 {
-  margin: 0 0 1rem;
+  margin: 2rem 0 1rem;
   text-align: center;
 }
 
 .project-skills {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 
@@ -441,6 +461,10 @@ span {
   height: 15rem;
   width: 25rem;
   transition: all 0.3s ease;
+  border: 5px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-project-1:hover,
@@ -452,33 +476,33 @@ span {
 }
 
 .img-project-1 {
-  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Gymate.58170dc8795a2991df26.png);
+  background: url(images/project-1-drawing-app.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .img-project-2 {
-  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/NicaVideo.05a837ca95ffa2855c03.png);
+  background: url(images/project-2-image-editor.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img-project-3 {
-  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Transporte.99a5acbe716a98b1f230.png);
+  background: url(images/project-3-calendar.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img-project-4 {
-  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/NoteCloud.a03d4987500b9c7412c9.png);
+  background: url(images/project-4-typing-speed-game.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img-project-5 {
-  background: url(https://nicolas-francken-portfolio.netlify.app/static/media/Songy.dd3e1bf0890bf05cd153.png);
-  background-position: 50%;
+  background: url(images/project-5-animated-login.png);
+  /* background-position: 50%; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -555,7 +579,7 @@ span {
 
 .separation {
   display: flex;
-  height: .1rem;
+  height: 0.1rem;
   margin: 0.5rem 0 0.5rem;
   width: 120%;
   border-radius: 20px;
@@ -573,9 +597,100 @@ span {
   user-select: none;
 }
 
-@media only screen and (max-width: 1200px) {
-  .about {
-    padding: 6.5rem 0rem;
+@media only screen and (max-width: 1100px) {
+  .container {
+    height: 100%;
+    padding: 6rem 1.5rem 1.5rem;
+  }
+
+  nav {
+    padding-inline: 8rem;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+  }
+
+  .buttons {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .top img {
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .about {
+    padding-inline: 0;
+    text-align: center;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-wrap: balance;
+  }
+
+  .about-image {
+    height: 8rem;
+    margin: 0 0 1.5rem;
+    right: -3rem;
+    top: -3rem;
+    width: 8rem;
+  }
+
+  .projects {
+    width: 100%;
+    padding: 6rem 11rem;
+  }
+
+  .project-2,
+  .project-4 {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding-inline: 2rem;
+  }
+
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
 }
