@@ -72,9 +72,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--nav-primary-color);
-  box-shadow: 0 1px 4px var(--bg-secondary-color)
-    /* rgba(146, 161, 176, 0.15) */;
+  /* background-color: var(--nav-primary-color); */
+  backdrop-filter: blur(25px);
+  background-color: #ffffff0e;
+  /* box-shadow: 0 1px 4px var(--bg-secondary-color) */
+  /* rgba(146, 161, 176, 0.15) */
   position: fixed;
   z-index: 100;
 }
@@ -137,12 +139,14 @@ nav .nav-links a:hover {
   align-items: flex-start;
 }
 
-img {
+.image img {
   display: flex;
   height: 20rem;
   width: 20rem;
   object-fit: cover;
   border-radius: 7rem;
+  user-select: none;
+  transform: rotateY(180deg);
   border: 3px solid var(--primary-color);
 }
 
@@ -359,7 +363,9 @@ span {
 
 .about-image {
   background: url(images/avatar.png);
-  background-position-y: 21%;
+  border: 5px solid;
+  border-color: var(--bg-secondary-color);
+  background-position-y: 30%;
   background-size: cover;
   border-radius: 50%;
   height: 10rem;
@@ -635,7 +641,7 @@ span {
     var(--primary-color),
     var(--secondary-color)
   );
-  color: #eee;
+  color: var(--nav-primary-color);
   margin: 0 auto;
   padding: 1.5rem;
   font-weight: 500;
