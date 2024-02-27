@@ -9,7 +9,7 @@
 
 - 📫 How to reach me: **adnbou2009@gmail.com**
 
-- ⚡ Fun fact: **I like to play videogames.**
+- ⚡ Fun fact: **I like to play video games.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
