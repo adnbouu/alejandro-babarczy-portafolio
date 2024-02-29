@@ -109,12 +109,18 @@ nav .nav-links a:hover {
   text-align: center;
   color: var(--primary-color);
 }
+
 .dark-mode:hover {
   /* scale: 1.1; */
   color: var(--secondary-color);
 }
+
 .bxs-moon:hover {
   /* color: var(--primary-color); */
+  scale: 1;
+}
+
+.bxs-sun:hover {
   scale: 1;
 }
 
