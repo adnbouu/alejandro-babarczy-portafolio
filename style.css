@@ -6,6 +6,7 @@
   --bg-primary-color: #f7f7f7;
   --bg-secondary-color: #ededed;
   --nav-primary-color: #fff;
+  --filter-contrast: 0.8;
 }
 
 .dark-theme {
@@ -14,6 +15,7 @@
   --bg-primary-color: #202020;
   --bg-secondary-color: #1a1a1a;
   --nav-primary-color: #161616;
+  --filter-contrast: 0.1;
 }
 
 * {
@@ -252,6 +254,7 @@ span {
   width: 2.5rem;
   background: url(https://nicolas-francken-portfolio.netlify.app/static/media/nextjs.e3c042b9d9d809ebb67e.svg);
   background-repeat: no-repeat;
+  filter: contrast(var(--filter-contrast));
   background-size: contain;
   border-radius: 5px;
 }
@@ -525,7 +528,7 @@ span {
   height: 15rem;
   width: 25rem;
   transition: all 0.3s ease;
-  border: 5px solid #ececec;
+  border: 5px solid var(--bg-primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
