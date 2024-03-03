@@ -2,11 +2,14 @@
 
 :root {
   --primary-color: #252525;
-  --secondary-color: #5425b3;
+  --secondary-color: #1f48ff;
+  /* --secondary-color: #5425b3; */
   --bg-primary-color: #f7f7f7;
   --bg-secondary-color: #ededed;
   --nav-primary-color: #fff;
   --filter-contrast: 0.8;
+  --scroll-first: #c1c1c1;
+  --scroll-second: #f1f1f1;
 }
 
 .dark-theme {
@@ -16,6 +19,18 @@
   --bg-secondary-color: #1a1a1a;
   --nav-primary-color: #161616;
   --filter-contrast: 0.1;
+  --scroll-first: #555;
+  --scroll-second: #333;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5vw;
+  background-color: var(--scroll-second);
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2vw solid var(--scroll-first);
+  border-radius: 100rem;
 }
 
 * {
@@ -45,8 +60,9 @@ h3 {
   font-weight: bold;
 }
 
-section {
+nav {
   display: block;
+  width: 100vw;
 }
 
 img {
@@ -215,6 +231,9 @@ span {
 }
 
 .skills-tab h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.3rem;
   margin: 0 0 2rem;
   color: var(--primary-color);
@@ -335,6 +354,9 @@ span {
 }
 
 .about-title h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--secondary-color);
   border-bottom: 3px solid var(--secondary-color);
   font-size: 1.7rem;
@@ -382,10 +404,10 @@ span {
 }
 
 .about-image {
-  background: url(images/avatar.png);
+  background: url(images/avatar-3.png);
   border: 5px solid;
   border-color: var(--bg-secondary-color);
-  background-position-y: 30%;
+  background-position-y: 21%;
   background-size: cover;
   border-radius: 50%;
   height: 10rem;
@@ -411,6 +433,9 @@ span {
 }
 
 .projects-title h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   border-bottom: 3px solid var(--secondary-color);
   color: var(--secondary-color);
   font-size: 1.7rem;
@@ -545,7 +570,7 @@ span {
 .img-project-3:hover,
 .img-project-4:hover,
 .img-project-5:hover {
-  scale: 1.02;
+  scale: 1.03;
 }
 
 .img-project-1 {
@@ -602,6 +627,9 @@ span {
 }
 
 .contact-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   border-bottom: 3px solid var(--secondary-color);
   color: var(--secondary-color);
   font-size: 1.7rem;
